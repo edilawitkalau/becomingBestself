@@ -1,0 +1,318 @@
+/* ===========================
+   General Body & Reset
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f5f7fb;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* Active navbar link */
+nav a.active {
+  color: #6a5acd; /* Highlight color */
+  font-weight: bold;
+  text-decoration: underline; /* optional */
+}
+
+/* ===========================
+   Header / Navigation
+=========================== */
+.site-header {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+.site-header .site-title {
+  font-family: serif;
+  color: #6a5acd;
+}
+
+.site-nav a {
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.site-nav a:hover {
+  color: #5742a6;
+}
+.why h2 {
+  text-align: center;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+/* ===========================
+   Hero Sections
+=========================== */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 14px 35px;
+  border: none;
+  background: #fff;
+  color: #333;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #f0e6ff;
+  transform: scale(1.05);
+}
+
+/* Unique Hero Backgrounds per Page */
+.home-hero {
+  background-image: url("https://images.unsplash.com/photo-1725452119277-c302b6ce936f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHBlcnNvbmFsJTIwZ3Jvd3RofGVufDB8fDB8fHww");
+}
+
+.acad-hero {
+  background-image: url(https://cdn.pixabay.com/photo/2019/04/14/10/26/college-4126481_1280.jpg);
+}
+
+.habit-hero {
+  background-image: url("https://cdn.pixabay.com/photo/2016/12/15/18/19/dusk-1909693_1280.jpg");
+}
+
+.spiritual-hero {
+  background-image: url("https://cdn.pixabay.com/photo/2019/11/29/17/05/hand-4661763_1280.jpg");
+}
+
+.submission-hero {
+  background: #6a5acd;
+}
+
+.login-hero {
+  background: #8ca6db;
+}
+
+/* ===========================
+   Cards & Sections
+=========================== */
+.benefits,
+.tips,
+.practices,
+.habits,
+.submission-info {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.benefits h2,
+.tips h2,
+.practices h2,
+.habits h2,
+.submission-info h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Benefit / Tip / Practice Cards */
+.benefit-cards,
+.tip-cards,
+.practice-cards,
+.points,
+.cards,
+.info-cards,
+.habit-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.benefit-card,
+.tip-card,
+.practice-card,
+.point,
+.card,
+.info-card,
+.habit-card {
+  width: 240px;
+  background: white;
+  padding: 28px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.b-cards {
+  display: inline-block;
+}
+
+.benefit-card:hover,
+.tip-card:hover,
+.practice-card:hover,
+.point:hover,
+.card:hover,
+.info-card:hover,
+.habit-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+/* ===========================
+   Login Form
+=========================== */
+.login-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.login-form h2 {
+  text-align: center;
+  color: #6a5acd;
+  margin-bottom: 30px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #6a5acd;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background: #5742a6;
+}
+
+.login-extra {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-extra a {
+  color: #6a5acd;
+}
+
+.login-extra a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   Quotes
+=========================== */
+.quote {
+  padding: 70px 20px;
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+  color: white;
+}
+
+.home-quote {
+  background: linear-gradient(to right, #b993d6, #8ca6db);
+}
+
+.spiritual-quote {
+  background: linear-gradient(to right, #b993d6, #8ca6db);
+}
+
+.submission-quote {
+  background: #6a5acd;
+}
+
+/* ===========================
+   Footer
+=========================== */
+.site-footer {
+  padding: 25px;
+  text-align: center;
+  background: #333;
+  color: white;
+  font-size: 15px;
+}
+
+/* ===========================
+   Animations
+=========================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
