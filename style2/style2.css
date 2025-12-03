@@ -193,8 +193,11 @@ nav a.active {
   margin-bottom: 10px;
 }
 .b-cards {
-  display: inline-block;
+  display: inline-table;
+  justify-content: center;
+  padding: 28px 20px;
 }
+
 
 .benefit-card:hover,
 .tip-card:hover,
